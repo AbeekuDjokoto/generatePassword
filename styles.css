@@ -65,6 +65,8 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 0px;
 }
 
 .generate-btn {
@@ -109,4 +111,12 @@ label {
     align-items: center;
     gap: 20px;
   }
+}
+
+@media (min-width: 791px) {
+    main {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
