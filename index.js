@@ -23,7 +23,11 @@ function generatePassword(){
 input.addEventListener("keydown", function(e){
     if(e.code === "Enter"){
         let value = e.target.value
-        updateValue(value)
+        if(value <= 18){
+            updateValue(value)
+        } else {
+            console.log("exceeded number to commit")
+        }
     }
 })
 
