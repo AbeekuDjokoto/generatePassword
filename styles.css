@@ -1,0 +1,112 @@
+:root {
+  --background-color: #1f2937;
+  --green-text-color: #4adf86;
+  --white-text-color: #fff;
+  --para-text-color: #d5d4d8;
+  --bg-btn-color: #10b981;
+  --input-color: #55f991;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  background: var(--background-color);
+}
+
+main {
+  width: 100%;
+  max-width: calc(100vw - 104px);
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -0.025em;
+  color: var(--white-text-color);
+}
+
+.green-text {
+  color: var(--green-text-color);
+}
+
+.para {
+  color: var(--para-text-color);
+  margin: 10px 0px 51px 0px;
+}
+
+.green-btn {
+  padding: 9px 17px;
+  color: var(--white-text-color);
+  background: var(--bg-btn-color);
+  border: none;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+hr {
+  border: 1px solid #2f3e53;
+  margin: 35px 0px;
+}
+
+.flexed-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generate-btn {
+  background: #273549;
+  border-radius: 6px;
+  width: 211px;
+  padding: 9px 17px;
+  border: none;
+  color: var(--green-text-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+input {
+  border-radius: 5px;
+  color: var(--white-text-color);
+  background: var(--bg-btn-color);
+  border: none;
+  padding: 9px 15px;
+  text-align: center;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--white-text-color);
+}
+
+label {
+  color: var(--para-text-color);
+}
+
+@media (min-width: 685px) {
+  .flexed-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+  }
+}
